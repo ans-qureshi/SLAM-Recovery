@@ -59,7 +59,7 @@ A few changes need to be done before building `ORB_SLAM`. After compiling thirdp
 - Remove `opencv2` dependency from ```manifest.xml```
 - In ```CmakeList.txt```, add `lboost` as target link library:
 Replace:
-```
+```cmake
 target_link_libraries(${PROJECT_NAME}
     ${OpenCV_LIBS}
     ${EIGEN3_LIBS}
@@ -68,7 +68,7 @@ target_link_libraries(${PROJECT_NAME}
 )
 ```
 with 
-```
+```cmake
 target_link_libraries(${PROJECT_NAME}
     ${OpenCV_LIBS}
     ${EIGEN3_LIBS}
@@ -89,7 +89,7 @@ Then run:
 roslaunch ORB_SLAM ExampleGroovyOrNewer.launch
 ```
 In the file `ORB_SLAM/SRC/TRACKING.CC`, on line 163 use following line:
-```
+```C++
 ros::Subscriber sub = nodeHandler.subscribe("/usb_cam/image_raw", 1, &Tracking::GrabImage, this);
 ```
 
@@ -101,7 +101,7 @@ nvm install 8.11.3
 nvm alias default 8.11.3
 ```
 OR
-```
+```bash
 nvm install v10.13.0
 nvm alias default 10.13.0
 ```
@@ -131,9 +131,9 @@ For merging purpose, we need to save simulator frames in a folder of our choice.
 Replace lines 98-102 with (with your own folder address):
 ```python
 if 'logdir' in params:
-    self._logdir = '/home/romi/frames'
+    self._logdir = '/home/$(hostname)/frames'
 else:
-    self._logdir = '/home/romi/frames'
+    self._logdir = '/home/$(hostname)/frames'
 ```
 
 Replace lines 422-428 with (with your own folder address):
@@ -142,7 +142,7 @@ if self.params.get(‘save_png’):
     if image is None:
         image = Image.frombytes(mode,(data.shape[0], data.shape[1]),data)
     time.sleep(0.06)
-    image.save(‘/home/romi/frames/color_.jpg’)
+    image.save(‘/home/$(hostname)/frames/color_.jpg’)
 ```
 Create `ROS` Node (`merger.cpp` provided above).
 This ROS node is important for communication between MINOS and ORB-SLAM. Simply paste the attached ROS node (merger.cpp) in catkin_ws/src and do necessary changes to CmakeList.txt by uncommenting the following:
