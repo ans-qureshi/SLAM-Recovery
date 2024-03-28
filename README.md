@@ -3,7 +3,7 @@ Tracking failure in state-of-the-art visual SLAM has been reported to be frequen
 
 To view our paper, please visit the following:
 Qureshi, A. et al. (2024). *One Step Back, Two Steps Forward: Learning Moves to Recover from SLAM Tracking Failures*. [DOI:10.1080/01691864.2024.2319144](https://doi.org/10.1080/01691864.2024.2319144)
-# BibTex
+## BibTex
 ```
 @article{hussain2024one,
   title={One step back, two steps forward: learning moves to recover from SLAM tracking failures},
@@ -11,7 +11,7 @@ Qureshi, A. et al. (2024). *One Step Back, Two Steps Forward: Learning Moves to 
   journal={Advanced Robotics},
   pages={1--16},
   year={2024},
-  publisher={Taylor \& Francis}
+  publisher={Taylor & Francis}
 }
 ```
 
