@@ -168,9 +168,9 @@ Finally compile by catkin_make and test by running following command:
 ```bash
 rosrun merger merger_node
 ```
-Use the bash file start.sh to run the system.
+Use the bash file `MINOS-SLAM.sh` to run the system.
 
-#Camera Calibration Parameters for ORB-SLAM
+# Camera Calibration Parameters for ORB-SLAM
 In order to obtain features quickly, we need to make sure that the Camera Calibration parameters are set according to MINOS. Using the calibration method explained in our paper, we have calibrated MINOS front view camera, for Matterport3D indoor scenes (parameters provided below). These settings must be set in `/ORB_SLAM/Data/Settings.yaml`:
 ```yaml
 %YAML:1.0
