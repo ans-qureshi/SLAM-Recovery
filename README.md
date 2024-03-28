@@ -204,5 +204,3 @@ The following files are included in this repository:
 - `MINOS_Navigation.py`: MINOS agent does not attempt to regain tracks.
 
 Weights Link: https://drive.google.com/file/d/1M9nby4k0wMmCy-EORqSqZ66UVNHwDcbn/view?usp=sharing
-
-[![Demo Video](http://img.youtube.com/vi/Ru5zVv56EQk/0.jpg)](http://www.youtube.com/watch?v=Ru5zVv56EQk)
