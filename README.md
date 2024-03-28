@@ -1,9 +1,24 @@
 # One Step Back, Two Steps Forward: Learning Moves to Recover from SLAM Tracking Failures
 Tracking failure in state-of-the-art visual SLAM has been reported to be frequent and hampers real-world deployment of SLAM solutions. Very recently, efforts have been made to avoid tracking failure using various methods (e.g. using deep reinforcement learning to plan a path where the risk of tracking failure is minimal). The results of those approaches are encouraging but are far from producing a failure-free visual system. Failure is inevitable in vision-based systems. Therefore, developing recovery (post-failure) solutions might be a better approach in developing more reliable systems. To this end, we propose a novel, easily trainable, deep recovery maneuver algorithm. Instead of predicting tracking failures, our algorithm predicts the back stepping move, post failure, which helps regain tracking.
 
-To cite our paper, please visit the following:
-
+To view our paper, please visit the following:
 Qureshi, A. et al. (2024). *One Step Back, Two Steps Forward: Learning Moves to Recover from SLAM Tracking Failures*. [DOI:10.1080/01691864.2024.2319144](https://doi.org/10.1080/01691864.2024.2319144)
+# BibTex
+```
+@article{hussain2024one,
+  title={One step back, two steps forward: learning moves to recover from SLAM tracking failures},
+  author={Hussain Qureshi, Ans and Latif Anjum, Muhammmad and Hussain, Wajahat and Muddassar, Usama and Abbasi, Sohail},
+  journal={Advanced Robotics},
+  pages={1--16},
+  year={2024},
+  publisher={Taylor \& Francis}
+}
+```
+
+## Video
+
+https://github.com/ans-qureshi/SLAM-Recovery/assets/38855178/e64633c1-7b4c-4190-90cb-2acc468d2d70
+
 
 # Our MINOS+SLAM Interface
 
