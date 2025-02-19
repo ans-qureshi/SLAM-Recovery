@@ -2,7 +2,7 @@
 Tracking failure in state-of-the-art visual SLAM has been reported to be frequent and hampers real-world deployment of SLAM solutions. Very recently, efforts have been made to avoid tracking failure using various methods (e.g. using deep reinforcement learning to plan a path where the risk of tracking failure is minimal). The results of those approaches are encouraging but are far from producing a failure-free visual system. Failure is inevitable in vision-based systems. Therefore, developing recovery (post-failure) solutions might be a better approach in developing more reliable systems. To this end, we propose a novel, easily trainable, deep recovery maneuver algorithm. Instead of predicting tracking failures, our algorithm predicts the back stepping move, post failure, which helps regain tracking.
 
 To view our paper, please visit the following:
-Qureshi, A. et al. (2024). *One Step Back, Two Steps Forward: Learning Moves to Recover from SLAM Tracking Failures*. [DOI:10.1080/01691864.2024.2319144](https://doi.org/10.1080/01691864.2024.2319144)
+Qureshi, A. et al. (2024). *One Step Back, Two Steps Forward:  Learning Moves to Recover from SLAM Tracking Failures*. [DOI:10.1080/01691864.2024.2319144](https://doi.org/10.1080/01691864.2024.2319144)
 ## BibTex
 ```
 @article{hussain2024one,
